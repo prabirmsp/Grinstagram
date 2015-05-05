@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddLinkActivity"
+            android:label="Share a Link"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

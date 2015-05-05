@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- http://coolors.co/bfd7ea-91aec1-508ca4-0a8754-004f2d -->
+    <item name="dark_green" type="color">#004F2D</item>
+    <item name="green" type="color">#0A8754</item>
+    <item name="med_blue" type="color">#508CA4</item>
+    <item name="grey_blue" type="color">#91AEC1</item>
+    <item name="light_grey_blue" type="color">#BFD7EA</item>
+
+
+</resources>
