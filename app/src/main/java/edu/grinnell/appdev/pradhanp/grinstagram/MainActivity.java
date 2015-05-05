@@ -10,15 +10,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.parse.ParseObject;
+
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Enable Local Datastore.
-        Parse.enableLocalDatastore(this);
-
-        Parse.initialize(this, "uPFiftnojDDtpMGNFidaUnr9dUmGCpGbwIq7nV4n", "D7YCB3cVFJmMHgsxlX2G9ZOmPhiqdNGQ4Ix2VMnw");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -28,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(manager);
+
+        // Parse Test
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
 
     }
 
